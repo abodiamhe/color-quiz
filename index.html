@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    /> 
+    <link rel="stylesheet" href="styles.css" />
+    <title>HNG Task 0</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="profile" >
+        <p class="logo">ab</p>
+        <div class="profile__time" data-testid="currentTimeUTC">&nbsp;</div>
+        <div class="profile__image" data-testid="profilePicture">&nbsp;</div>
+        <!-- <figure class="profile__image">
+          <img src="img/author.jpeg" alt="author  image" width="100%" />
+        </figure> -->
+        <h1 class="profile__title" data-testid="fullName">Sadiq Abodiamhe</h1>
+        <p class="profile__subtitle" data-testid="jobTitle">Web Developer</p>
+        <p class="location" data-testid="currentLocation">            <svg class="location-icon">
+          <use xlink:href="img/sprite.svg#icon-location"></use>
+        </svg>Abuja, Nigeria</p>
+        <div>
+          <p class="profile__description" data-testid="shortBio">
+            A full stack developer with extensive experience with both front-end
+            and back-end development. Performing strongly in cross-functional
+            teams, and conducted code reviews.
+          </p>
+        </div>
+
+        <div class="profile__link">
+          <a href="mailto:abodiamhe@gmail.com" data-testid="emailAddress">abodiamhe@gmail.com</a>
+        </div>
+        <div class="profile__icon" data-testid="socialLinks">
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            target="_blank"
+            href="https://github.com/abodiamhe"
+            rel="noopener noreferrer"
+          >
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="mailto:abodiamhe@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+          </a>
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="https://www.linkedin.com/in/akhigbe-sadiq-0a8713190/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="https://x.com/akhigbesadiq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#icon-x"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
