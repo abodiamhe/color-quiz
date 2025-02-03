@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  padding: 0;
+  padding: 2rem;
   margin: 0;
   font-family: "Rowdies", serif;
 
@@ -31,7 +31,7 @@ body {
 }
 
 .header {
-  margin: 2rem 0;
+  margin: auto;
   text-align: center;
   font-size: 8rem;
 }
@@ -60,13 +60,13 @@ body {
   gap: 2rem;
   justify-items: center;
   justify-content: center;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .question {
   display: grid;
   justify-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .target {
