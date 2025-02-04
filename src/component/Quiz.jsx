@@ -48,15 +48,30 @@ export default function Quiz() {
     return (
       <div className="quiz">
         <h2 className="game__over">Game over: Press restart to start game</h2>
-        <p className="totalscore">Total score: {correctScore} / {QUESTION.length}</p>
+        <p className="totalscore">
+          Total score: {correctScore} / {QUESTION.length}
+        </p>
         <Restart handleReset={handleReset} />
       </div>
     );
   }
 
+  let answer = "";
+  if (answerState === "correct") {
+    answer = "Correct 🎉";
+  }
+  if (answerState === "wrong") {
+    answer = "Wrong Answer 😔";
+  }
   return (
     <div className="quiz">
-      <h4 data-testid="score" className="score">score: {correctScore}</h4>
+      <h4 data-testid="score" className="score">
+        score: {correctScore}
+      </h4>
+      <p data-testid="gameStatus" className={`answer__status ${answerState}`}>
+        {answer}
+      </p>
+
       <Question
         key={activeQuestionIndex}
         questionTarget={QUESTION[activeQuestionIndex].target}

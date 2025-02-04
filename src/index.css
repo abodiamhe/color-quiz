@@ -105,8 +105,11 @@ body {
 }
 
 .wrong {
-  background-color: red;
-  opacity: 0.8;
+  color: red; 
+}
+
+.correct {
+  color: blue;
 }
 
 .restart {
@@ -128,6 +131,12 @@ body {
 
 .totalscore {
   font-size: 1.5rem;
+}
+
+.answer__status {
+  position: absolute;
+  right: 5rem;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 56.25em) {
